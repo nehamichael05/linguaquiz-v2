@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #0a0f1a; color: #e6edf3; min-height: 100vh; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #161b22; }
+::-webkit-scrollbar-thumb { background: #58cc02; border-radius: 10px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+@keyframes pop { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+
+.fade-in { animation: fadeIn 0.4s ease forwards; }
+.shake { animation: shake 0.4s ease; }
+.pop { animation: pop 0.3s ease; }
+
+.option-btn { transition: all 0.15s ease; border: 2.5px solid #21262d; }
+.option-btn:hover:not(:disabled) { border-color: #1cb0f6; background: rgba(28,176,246,0.08); transform: translateY(-1px); }
+.option-btn.correct { border-color: #58cc02 !important; background: rgba(88,204,2,0.12) !important; }
+.option-btn.wrong { border-color: #ff4b4b !important; background: rgba(255,75,75,0.12) !important; }
