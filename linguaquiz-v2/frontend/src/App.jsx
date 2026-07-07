@@ -4,7 +4,7 @@ import { Heart, Zap, Trophy, Star, ArrowRight, RotateCcw, Flame, Globe, ChevronR
 // ============================================================
 // ✏️ PASTE YOUR RENDER BACKEND URL HERE (no trailing slash)
 // ============================================================
-const API_URL = "https://linguaquiz-v2.onrender.com"
+const API_URL = "https://YOUR-ACTUAL-URL.onrender.com"
 // ============================================================
 
 const LANGUAGES = [
